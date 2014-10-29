@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+        <h3>Novo Post </h3>
+        <h:form id="login-form">
+           <h:outputText value="Titulo"/>
+           <h:inputText value="#{postarBean.titulo}" id="titulo"/>
+           <br/>
+           <h:outputText value="Texto:"/>
+           <h:inputTextarea  value="#{postarBean.texto}" id="texto" />
+           <br/>
+           <h:commandButton id="button" value="postar" action="#{postarBean.postar}"/>
+           <br/>
+        </h:form>
+
+ 
+</html>
